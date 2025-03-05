@@ -1,4 +1,13 @@
+[build]
+  command = "npm run build"  # Change this based on your project's build command
+  publish = "dist"  # Change this to your build output folder (e.g., "build" or "public")
+
+[dev]
+  framework = "react"  # Set your framework (react, vue, etc.)
+  command = "npm start"  # Command to start your local development server
+  port = 8888  # Default Netlify dev server port
+
 [[redirects]]
-from = "/*"
-to = "/task.html
-status = 200 
+  from = "/*"
+  to = "/index.html"
+  status = 200
